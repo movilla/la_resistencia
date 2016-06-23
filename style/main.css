@@ -2,10 +2,11 @@
   position: absolute;
   width: 7rem;
   height: 7rem;
+  z-index: 2;
 }
 
 #fondo {
-  position: fixed;
+  position: absolute;
   background: url("img/tablero_s.png") no-repeat bottom right fixed;
   background-size: 80% auto;
   width: 100%;
@@ -38,4 +39,23 @@
   height: auto;
   left: 70%;
   top: 10%;
+}
+
+.play {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 3rem;
+  height: auto;
+  z-index: -1;
+}
+
+.pause {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 3rem;
+  height: auto;
+  z-index: 1;
+  visibility: hidden;
 }
