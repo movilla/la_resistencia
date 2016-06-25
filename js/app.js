@@ -14,7 +14,7 @@ for(var i=0;i<nodeList.length;i++) {
   }, false);
 };
 
-document.querySelector('#b01a').onclick = function () {
+/*document.querySelector('#b01a').onclick = function () {
         var audio = confirm('¿Quieres comenzar con la narración?');
         if (audio == true) {
                 document.getElementById('sonido_1').play();
@@ -32,3 +32,17 @@ document.querySelector('#b02a').onclick = function () {
                 document.querySelector('#b02a').style.visibility ='hidden';
                 document.querySelector('#b01a').style.visibility ='visible';    
 };
+*/
+
+function playAudio(id) {
+    var audioElement = document.getElementById(id);
+    var url = audioElement.getAttribute('src');
+    var my_media = new Media(url,
+            // success callback
+             function () { console.log("playAudio():Audio Success"); },
+            // error callback
+             function (err) { console.log("playAudio():Audio Error: " + err); }
+    );
+           // Play audio
+    my_media.play();
+}
