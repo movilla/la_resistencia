@@ -78,3 +78,58 @@
   width: 18rem;
   height: 2rem;
 }
+
+.n_jugadores {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  font-size: 3em;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
+.seleccionar {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  font-size: 4em;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+  margin-top: 10%;
+}
+
+.cinco {
+  left: 20%;
+  position: absolute;
+}
+
+.seis {
+  left: 30%;
+  position: absolute;
+}
+
+.siete {
+  left: 40%;
+  position: absolute;
+}
+
+.ocho {
+  left: 50%;
+  position: absolute;
+}
+
+.nueve {
+  left: 60%;
+  position: absolute;
+}
+
+.diez {
+  left: 70%;
+  position: absolute;
+}
